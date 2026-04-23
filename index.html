@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Hot Beans Web</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2025.css">
+<link rel="css style" href="MAIN.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <style>
+  #box {
+display:table;
+width:100%;
+}
+.column {
+display:table-cell;
+width:75%;
+background:#c5e0f1;
+padding:0 20px;
+}
+.two {
+  display:table-cell;
+background:#c5e0f1;
+padding:0 20px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  #87ceeb;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-size: x-large;
+}
+
+.p3 {
+  border: 1px black;
+  font-family: "Patrick+Hand";
+  padding-top: 0 50px;
+  font-size: large;
+  text-align: left;
+  width: 35%;
+}
+ .sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #66d9ff;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+   padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  @media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 3 / span 6;}
+  .footer {grid-area: 4 / span 6;}
+}
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="w3-sidebar w3-light-grey w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+ <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  
+ <a href="index.html"><i class= "w3-bar-item w3-button"></i> Home</a>
+  <a href="TheTeam.html"><i class= "w3-bar-item w3-button"></i>Team</a>
+  <a href="Jobs.html"><i class= "w3-bar-item w3-button"></i>Jobs</a>
+  <a href="Apply.html"><i class= "w3-bar-item w3-button"></i>Apply Now</a>
+  <a href="Other.html"><i class= "w3-bar-item w3-button"></i>Other Courses</a>
+</div>
+
+
+<div class="w3-light-blue">
+   <button class="w3-button w3-light-blue w3-large" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="text-align:center">HotBeans Web</h1>
+  </div>
+</div>
+
+<img src="webbb.jpg" alt="Hot beans web" class="center" style="width:50%; height:230px;">
+
+<p1> </p1>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+<main class="footer">
+  <p>Email | Phone number | Privacy Policy</p>
+</main>
+
+</body>
+</html>
